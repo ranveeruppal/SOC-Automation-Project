@@ -7,17 +7,15 @@ The goal of this SOC automation project was to develop a seamless workflow that 
 In this setup, we used Mimikatz to simulate a vulnerability, triggering a syslog event on the client machine. This event was forwarded via the Wazuh agent, where a custom detection rule flagged the Mimikatz activity and generated an alert. The alert was then logged in The Hive SOAR platform, and an automated email notification was sent to the SOC analyst. All platform interactions were orchestrated through Shuffle using RESTful APIs, ensuring an efficient and cohesive response to critical events.
 
 ## Skills Learned
-- Cloud server setup and management (DigitalOcean)
+- Cloud server setup and management
 - Firewall configuration for secure network access
 - SSH configuration and management
 - Installation and configuration of Wazuh and The Hive SOAR platform
 - API integration between Wazuh, VirusTotal, and Shuffle
-- Rule creation in Wazuh for custom detection (Mimikatz)
+- Rule creation in Wazuh for custom detection
 - Log analysis using Sysmon and Wazuh
 - SOAR automation through Shuffle
 - RESTful API integration for automated workflows
-- JSON manipulation for API-driven alerting and notifications
-- Dynamic email automation for SOC analyst notifications
 
 ## Tools Used
 - **Wazuh**: Security monitoring and log analysis
@@ -27,7 +25,6 @@ In this setup, we used Mimikatz to simulate a vulnerability, triggering a syslog
 - **Sysmon**: Windows system monitoring tool
 - **Mimikatz**: Penetration testing tool to simulate an attack
 - **DigitalOcean**: Cloud hosting provider for servers
-- **SSH**: Secure shell for server access and management
 - **RESTful APIs**: For platform integrations
 
 ## Project Steps
